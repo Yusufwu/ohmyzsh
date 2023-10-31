@@ -12,6 +12,8 @@ proxychains4 git fetch origin
 
 git checkout origin/master
 
+git submodule update
+
 cp -rf templates/zshrc.zsh-template   ~/.zshrc
 
 source ~/.zshrc

@@ -4,6 +4,8 @@ proxychains4 sh -c "$(proxychains4 wget -O- https://raw.githubusercontent.com/oh
 
 cat ~/.ssh/id_rsa.pub
 
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 cd ~/.oh-my-zsh/
 

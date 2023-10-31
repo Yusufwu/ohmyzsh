@@ -2,6 +2,9 @@
 
 proxychains4 sh -c "$(proxychains4 wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+cat ~/.ssh/id_rsa.pub
+
+
 cd ~/.oh-my-zsh/
 
 git remote rename origin old
@@ -11,6 +14,8 @@ git remote add origin git@github.com:Yusufwu/ohmyzsh.git
 proxychains4 git fetch origin
 
 git checkout origin/master
+
+git submodule init
 
 git submodule update
 

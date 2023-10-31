@@ -1,3 +1,13 @@
+# custom installation
+proxychains4 sh -c "$(proxychains4 wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~/.oh-my-zsh/
+git remote rename origin old
+git remote add origin git@github.com:Yusufwu/ohmyzsh.git
+proxychains4 git fetch origin
+git checkout origin/master
+cp -rf templates/zshrc.zsh-template   ~/.zshrc
+source ~/.zshrc
+
 <p align="center"><img src="https://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
 
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/) configuration.
